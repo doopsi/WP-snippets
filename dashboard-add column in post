@@ -36,3 +36,13 @@ function column_order($columns) {
   }
   return $n_columns;
 }
+ /*
+ * Make column sortable
+ */
+function sortable_columns() {
+    return array(
+      'client'      => 'client'
+    );
+  }
+  
+  add_filter( "manage_edit-dz_portfolio_sortable_columns", "sortable_columns" );
